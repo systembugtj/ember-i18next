@@ -1,65 +1,59 @@
-/* jshint node: true */
+/*jshint node:true*/
 module.exports = {
   scenarios: [
     {
-      name: 'default',
-      dependencies: { }
+      name: 'ember-1.13',
+      bower: {
+        dependencies: {
+          'ember': '~1.13.0'
+        },
+        resolutions: {
+          'ember': '~1.13.0'
+        }
+      }
+    },
+    {
+      name: 'ember-lts-2.4',
+      bower: {
+        dependencies: {
+          'ember': 'components/ember#lts-2-4'
+        },
+        resolutions: {
+          'ember': 'lts-2-4'
+        }
+      }
     },
     {
       name: 'ember-release',
-      dependencies: {
-        'ember': 'components/ember#release'
-      },
-      resolutions: {
-        'ember': 'release'
+      bower: {
+        dependencies: {
+          'ember': 'components/ember#release'
+        },
+        resolutions: {
+          'ember': 'release'
+        }
       }
     },
     {
       name: 'ember-beta',
-      dependencies: {
-        'ember': 'components/ember#beta'
-      },
-      resolutions: {
-        'ember': 'beta'
+      bower: {
+        dependencies: {
+          'ember': 'components/ember#beta'
+        },
+        resolutions: {
+          'ember': 'beta'
+        }
       }
     },
     {
       name: 'ember-canary',
-      dependencies: {
-        'ember': 'components/ember#canary'
-      },
-      resolutions: {
-        'ember': 'canary'
-      }
-    },
-    {
-      name: 'ember-1.13',
-      dependencies: {
-        'ember': '1.13.11'
-      }
-    },
-    {
-      name: 'ember-2.0',
-      dependencies: {
-        'ember': '2.0.2'
-      }
-    },
-    {
-      name: 'ember-2.1',
-      dependencies: {
-        'ember': '2.1.1'
-      }
-    },
-    {
-      name: 'ember-2.2',
-      dependencies: {
-        'ember': '2.2.2'
-      }
-    },
-    {
-      name: 'ember-2.3',
-      dependencies: {
-        'ember': '2.3.1'
+      bower: {
+        dependencies: {
+          'ember': 'components/ember#canary'
+        },
+        resolutions: {
+          'ember': 'canary'
+        }
       }
     }
   ]
